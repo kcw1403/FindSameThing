@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+ <Button
+        android:id="@+id/replay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="@string/replay"
+        android:textColor="#FF5E00"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/replay"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="@string/endGame"
+        android:textColor="#FF5E00"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+
+
+            <ToggleButton
+                android:id="@+id/callMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:textColor="#FF5E00"
+                android:textOff="@string/menu"
+                android:textOn="@string/menu"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/scoreTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textColor="#FF5E00"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/startScore"
+                android:textColor="#FF5E00"
+                android:textSize="40sp" />
+            
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="#FF5E00"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/startScore"
+                android:textColor="#FF5E00"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp" >
+
+           <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/back" />
+
+            <TableLayout
+                android:id="@+id/tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn1"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn2"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn3"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn4"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn5"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn6"
+                        style="@style/imageBtnStyleHard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn7"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn8"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn9"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn10"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn11"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn12"
+                        style="@style/imageBtnStyleHard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn13"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn14"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn15"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn16"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn17"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn18"
+                        style="@style/imageBtnStyleHard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn19"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn20"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn21"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn22"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn23"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn24"
+                        style="@style/imageBtnStyleHard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn25"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn26"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn27"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn28"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn29"
+                        style="@style/imageBtnStyleHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn30"
+                        style="@style/imageBtnStyleHard" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/readyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/ready"
+        android:textColor="#FF5E00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

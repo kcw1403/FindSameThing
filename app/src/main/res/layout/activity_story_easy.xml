@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/back"
+    android:background="@drawable/timebar"
+    tools:context=".StoryEasyActivity">
+
+
+
+    <Button
+        android:id="@+id/replay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="@string/replay"
+        android:textColor="#FF5E00"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/replay"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="@string/endGame"
+        android:textColor="#FF5E00"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/timebar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:max="100"
+            android:progress="10"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/back" />
+
+            <TableLayout
+                android:id="@+id/tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn1"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn2"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn3"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn4"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn5"
+                        style="@style/imageBtnStyle" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn6"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn7"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn8"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn9"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn10"
+                        style="@style/imageBtnStyle" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn11"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn12"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn13"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn14"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn15"
+                        style="@style/imageBtnStyle" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn16"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn17"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn18"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn19"
+                        style="@style/imageBtnStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn20"
+                        style="@style/imageBtnStyle" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/readyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/ready"
+        android:textColor="#e6dad3"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</android.support.constraint.ConstraintLayout>

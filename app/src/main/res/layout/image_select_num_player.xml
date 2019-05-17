@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+
+         <Button
+                android:id="@+id/callMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:textColor="#FF5E00"
+                android:textStyle="bold"
+                android:text="@string/back"
+                android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/selectDifficulty"
+        android:textColor="#FF5E00"
+        android:textSize="30sp"
+        android:layout_weight="2"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/ImageRbg"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/ImageEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/ImageEasy"
+            android:textColor="#FF5E00"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/ImageHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ImageHard"
+            android:textColor="#FF5E00"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="3"
+        android:text="@string/selectNumPlayer"
+        android:textColor="#FF5E00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/selectP1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="@string/onePlayer"
+            android:textColor="#FF5E00"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp" />
+
+        <Button
+            android:id="@+id/selectP2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="@string/twoPlayer"
+            android:textColor="#FF5E00"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

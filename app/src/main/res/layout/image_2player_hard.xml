@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:gravity="bottom|right"
+            
+            android:text="@string/madeby" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/p1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/p1Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/player1"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/p1Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/startScore"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:stretchColumns="*" >
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="40dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/showmessage"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn1"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn2"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn3"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn4"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn5"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn6"
+                        style="@style/imageBtnStyleTwoHard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn7"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn8"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn9"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn10"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn11"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn12"
+                        style="@style/imageBtnStyleTwoHard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn13"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn14"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn15"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn16"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn17"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn18"
+                        style="@style/imageBtnStyleTwoHard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn19"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn20"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn21"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn22"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn23"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn24"
+                        style="@style/imageBtnStyleTwoHard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp" >
+
+                    <ImageView
+                        android:id="@+id/imageBtn25"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn26"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn27"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn28"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn29"
+                        style="@style/imageBtnStyleTwoHard" />
+
+                    <ImageView
+                        android:id="@+id/imageBtn30"
+                        style="@style/imageBtnStyleTwoHard" />
+                </TableRow>
+            </TableLayout>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/p2Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player2"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/p2Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/startScore"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
